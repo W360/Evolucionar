@@ -1,0 +1,23 @@
+/* Basic jQuery Slider essential styles */
+
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none;}
+li.bjqs-slide h1 {z-index:9;position: absolute; top:12%; width: 26%; color: #fff!important}
+li.bjqs-slide span {z-index:9;position: absolute; top:20%;left: 0px; padding-top: 2em 0em;margin:2em 3%;display: block; width: 19%; font-size: 18px; color:#fff; font-family: helvetica}
+li.bjqs-slide a {z-index:9;position: absolute; top:80%;left: 18%; display: block; background: #f46221; color:#fff; text-decoration: none; font-weight: bold; padding: 0.2em 0.5em; border-radius:8px; font-family: helvetica}
+
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls.v-centered li a{position:absolute;}
+ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{z-index: 0; display:block;width:23%;height:100%;margin:0;padding:2em 1em;position:absolute;top:0; background: url(../img/banners/bg.jpg);}
+
+@media screen and (max-width: 1000px) {
+	li.bjqs-slide h1 {z-index:9;position: absolute; top:18%; width: 26%; color: #fff!important}
+	li.bjqs-slide span {display: none}
+	li.bjqs-slide a {z-index:9;position: absolute; top:80%;left: 10%; display: block; background: #f46221; color:#fff; text-decoration: none; font-weight: bold; padding: 0.2em 0.5em; border-radius:8px; font-family: helvetica}
+}
